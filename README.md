@@ -43,7 +43,7 @@ See `ATTRIBUTION.md` and `materials/CONTENT-MAP.md`. The original PISA demo file
 
 To edit the app, change its embedded `course-data` JSON, stylesheet, or final script in `index.html`. If changing bundled data, update both the downloadable file and its base64 entry in `course-data.files` so the browser runtime uses the same version. There are no application package dependencies to install.
 
-This delivery prepares the site for publishing; it does not create a GitHub repository or publish it publicly.
+The workshop is published at https://xiyu-w.github.io/pupil-ai-r-workshop/. This folder is the matching static distribution.
 
 
 ## Teaching Mode (September 2026 update)
