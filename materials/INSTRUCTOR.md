@@ -62,3 +62,12 @@ summary(model)
 ```
 
 With only 12 clusters, examine design, baseline balance, model assumptions, and small-sample inference. A random intercept alone does not guarantee a justified p-value. Students need not learn mixed-model estimation in a beginner Part I session.
+
+
+## Teaching Mode and evidence checks
+
+Start the categorical lesson with the deliberately questionable mean of Gender. In the unmodified data, the result is 1.51; this is a mean of codes, not an interpretable amount of Gender. The assistant first asks for a count function, then suggests table(), then offers a starter with a blank, and reveals full code only on request. After running a table of numeric codes, explore labels with factor(). Actual source counts are 98 Female and 102 Male.
+
+In the missing-data lesson, use Can you catch the AI's mistake? Load the challenge, predict, and Run. The displayed AI claim is explicitly deliberately incorrect, not output from a connected AI model. Students select the evidence-based critique, check missing/nonmissing counts, and calculate a mean with na.rm=TRUE. Discuss why excluding missing observations is a computational choice, not proof of unbiased inference. The challenge reads a fresh copy into challenge_data and inserts three missing scores; it does not change data_demo.
+
+The local assistant offers curated questions and examples. It cannot understand arbitrary student requests or read plots. For a generative conversation, prepare and review teaching context in the expandable external-AI section, then copy it into the student's preferred service. The code editor and lesson worked examples remain available independently of the guided reveal sequence.

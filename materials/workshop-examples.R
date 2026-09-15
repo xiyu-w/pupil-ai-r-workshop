@@ -121,6 +121,11 @@ hist(data_demo$Math_Overall,
 hist(data_demo$Math_Overall, breaks=20, main="Math scores: 20 requested breaks", xlab="Math Overall Scores", col="#2B7570", border="white")
 
 # Counts, labels, missingness
+# A deliberately questionable summary. Predict what R will do.
+mean(data_demo$Gender)
+# Does successful execution make this a meaningful summary?
+
+# Optional: Worked example: labels and a bar plot
 gender <- factor(data_demo$Gender, levels=c(1,2), labels=c("Female","Male"))
 school <- factor(data_demo$Sch_Type, levels=1:3,
  labels=c("Private independent","Private Government-dependent","Public"))
@@ -128,6 +133,9 @@ table(gender, useNA="ifany")
 table(school, useNA="ifany")
 barplot(table(gender), main="Distribution of Gender",
  xlab="Gender", ylab="Frequency", col=c("#CFB991","#2B7570"))
+
+# Optional: Count numeric codes
+table(data_demo$Gender, useNA="ifany")
 
 # Optional: Original value labels (install first)
 library(haven)
