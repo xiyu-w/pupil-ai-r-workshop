@@ -44,3 +44,14 @@ See `ATTRIBUTION.md` and `materials/CONTENT-MAP.md`. The original PISA demo file
 To edit the app, change its embedded `course-data` JSON, stylesheet, or final script in `index.html`. If changing bundled data, update both the downloadable file and its base64 entry in `course-data.files` so the browser runtime uses the same version. There are no application package dependencies to install.
 
 This delivery prepares the site for publishing; it does not create a GitHub repository or publish it publicly.
+
+
+## Teaching Mode (September 2026 update)
+
+The three areas are Lesson, R Workspace, and AI Learning Assistant. The built-in assistant is explicitly labelled **curated guided practice**, not a generative model. No AI API key, backend, or paid AI call is included. Free-text goals are included in an optional context handoff; the local guide does not interpret arbitrary questions.
+
+Four help actions progress through hint, reasoning, starter code, and an explicitly requested full example. Suggestions never run automatically. Run records actual code, text output, and a limited session-structure snapshot; edited code, other lesson runs, and R restarts make previous results stale. Automatic notices cover the numeric Gender mean/table and the missing-score challenge. They do not interpret arbitrary code or plots.
+
+The missing-data challenge uses a separate challenge_data object with three injected NA values. The original Math_Overall has no missing scores. External AI links are secondary; Prepare current teaching context includes the lesson, codebook, current code, last run, stage and learner question for review and copying. Nothing is sent automatically.
+
+A conversational in-page generative AI assistant remains a separate backend integration. Keep API keys on a server; do not add a secret to this public HTML.
